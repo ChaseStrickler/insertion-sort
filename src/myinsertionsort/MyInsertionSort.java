@@ -6,9 +6,17 @@ package myinsertionsort;
 
 import java.util.Random;
 
-
+/**
+* This program implements insertion sort on a variety of randomly generated arrays
+* @author Chase Strickler
+*/
 public class MyInsertionSort {
     
+    /**
+    * The main method is used to call the other methods as well as print out the sorted arrays and their inversions.
+    * 
+    * @param args the command line arguements
+    */
     public static void main(String[] args) {
         int n = 1;
         int set_counter = 0;        //set_counter counts how many comparisons and swaps have happened while sorting 1 array.
