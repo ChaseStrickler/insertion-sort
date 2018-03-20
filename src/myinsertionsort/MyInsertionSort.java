@@ -1,6 +1,11 @@
+//Chase Strickler
+//Insertion Sort
+/26 January 2018
+
 package myinsertionsort;
 
 import java.util.Random;
+
 
 public class MyInsertionSort {
     
@@ -28,7 +33,12 @@ public class MyInsertionSort {
         }  
     }
     
-    public static int[] createRandomIntArray( int size) {   //method generates a random array
+    /**
+    * This method generates a random array of a given size.
+    * @param size - indicates the size of the array to be generated
+    * @return answer
+    */
+    public static int[] createRandomIntArray(int size) {   //method generates a random array
         int[] answer = new int[ size];  //create new array
         int index = 0;  //will be used to iterate across our new array and populate it with element
         Random generator = new Random();
@@ -41,10 +51,11 @@ public class MyInsertionSort {
     }   
     
     /**
+     * This method performs the insertion sort algorithm.
      *
-     * @param A
-     * @param count
-     * @return
+     * @param A - array to be sorted
+     * @param count - counter to track how many swaps occur
+     * @return count
      */
     public static int insertionSort(int[] A, int count){
        int temp;
